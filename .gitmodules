@@ -1,0 +1,24 @@
+[submodule "abc"]
+	path = abc
+	url = https://github.com/berkeley-abc/abc.git
+[submodule "IC3ref"]
+	path = IC3ref
+	url = https://github.com/gipsyh/IC3ref.git
+[submodule "Pavy"]
+	path = Pavy
+	url = https://github.com/gipsyh/Pavy.git
+[submodule "avr"]
+	path = avr
+	url = https://github.com/gipsyh/avr.git
+[submodule "super-prove-build"]
+	path = super-prove-build
+	url = https://github.com/gipsyh/super-prove-build.git
+[submodule "rIC3"]
+	path = rIC3
+	url = https://github.com/gipsyh/rIC3.git
+[submodule "pono"]
+	path = pono
+	url = https://github.com/gipsyh/pono.git
+[submodule "nuXmv"]
+	path = nuXmv
+	url = https://github.com/youyusama/i-Good_Lemmas_MC.git
