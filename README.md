@@ -1,6 +1,6 @@
 # rIC3-CAV25 Artifact
 
-The ```result``` folder contains the evaluated results. Run python3 ./utils/main.py to analyze the results.
+The ```result``` folder contains the evaluated results. Run ```python3 ./utils/main.py``` to analyze the results.
 
 ## rIC3
 - Compile: See ./rIC3/README.md
