@@ -4,15 +4,9 @@
 [submodule "IC3ref"]
 	path = IC3ref
 	url = https://github.com/gipsyh/IC3ref.git
-[submodule "Pavy"]
-	path = Pavy
-	url = https://github.com/gipsyh/Pavy.git
 [submodule "avr"]
 	path = avr
 	url = https://github.com/gipsyh/avr.git
-[submodule "super-prove-build"]
-	path = super-prove-build
-	url = https://github.com/gipsyh/super-prove-build.git
 [submodule "rIC3"]
 	path = rIC3
 	url = https://github.com/gipsyh/rIC3.git

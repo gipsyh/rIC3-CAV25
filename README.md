@@ -9,6 +9,7 @@ The ```result``` folder contains the evaluated results. Run ```python3 ./utils/m
     - rIC3-portfolio: ```cargo r --release -- -e portfolio <AIGER>```
 
 ## ABC-Super-Prove
+- Download: ```git clone https://github.com/sterin/super-prove-build.git```
 - Requirements: python2 environment
 ```
 conda create -y -n py2 python=2.7
@@ -39,6 +40,7 @@ cmake --build . -j
 - Run: ```./ic3refmain < <AIGER>```
 
 ## Avy
+- Download: ```git clone https://github.com/TechnionFV/hwmcc24_submission.git Pavy```
 - Run:
     - Avy: ```python3 scripts/pavy.py -p kavy3 <AIGER>```
     - Pavy: ```python3 scripts/pavy.py <AIGER>```
