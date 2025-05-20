@@ -9,17 +9,21 @@ The ```result``` folder contains the evaluated results. Run ```python3 ./utils/m
     - rIC3-portfolio: ```cargo r --release -- -e portfolio <AIGER>```
 
 ## ABC-Super-Prove
-- Download: ```git clone https://github.com/sterin/super-prove-build.git```
-- Requirements: python2 environment
-```
-conda create -y -n py2 python=2.7
-conda activate py2
-export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH && LIBRARY_PATH=$CONDA_PREFIX/lib:$LIBRARY_PATH
-```
-- Compile: See ./super-prove-build/README.md
+- Download: ```git clone --recursive https://github.com/sterin/super-prove-build.git```
+- Requirements: conda
+- Compile: Also see ./super-prove-build/README.md
+    - ```conda create -y -n py2 python=2.7```
+    - ```conda activate py2```
+    - ```conda install ninja future -y```
+    - ```mkdir super-prove-build/build && cd super-prove-build/build```
+    - ```cmake -DCMAKE_BUILD_TYPE=Release -G Ninja   -DCMAKE_LIBRARY_PATH=$CONDA_PREFIX/lib -DPYTHON_LIBRARY=$CONDA_PREFIX/lib/libpython2.7.so -DPYTHON_INCLUDE_DIR=$CONDA_PREFIX/include/python2.7 -DCMAKE_EXE_LINKER_FLAGS="-L$CONDA_PREFIX/lib" ..```
+    - ```ninja```
+    - ```ninja package```
+    - This will create a super_prove-hwmcc20-2-<OS>-Release.tar.gz in the build directory.
 - Run:
-    - ```export PYTHONHOME=$CONDA_PREFIX/ && export PYTHONPATH=$CONDA_PREFIX/lib/python2.7/site-packages/```
-    - See ./super-prove-build/README.md
+    - ```tar -zxvf super_prove-hwmcc20-2-<OS>-Release.tar.gz```
+    - ```export PYTHONHOME=$CONDA_PREFIX/ && export PYTHONPATH=$CONDA_PREFIX/lib/python2.7/site-packages/ LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH```
+    - ```super_prove/bin/super_prove.sh <AIGER>```
 
 
 ## ABC-pdr
